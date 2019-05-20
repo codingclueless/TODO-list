@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Pacifico&display=swap');
+
+h1 {
+    font-family: 'Pacifico';
+    text-align: center;
+    text-decoration: underline;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#todo-list li {
+    list-style: none;
+    font-family: 'Oswald';
+    text-align: left;
+    background-color: red;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+#todo-list input {
+    float: left;
+}
