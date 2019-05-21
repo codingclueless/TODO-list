@@ -1,11 +1,11 @@
 import todo from '../data/todo-list-data.js';
-import template from '../src/todo-template.js';
-import htmlToDom from '../src/todo-template.js';
+import todoTemplate from '../src/todo-template.js';
+import htmlToDom from '../src/html-to-dom.js';
 
-const listElement = document.getElementById('todo-list');
+const todoElement = document.getElementById('todo-list');
 
 todo.forEach(todo => {
-    const html = template(todo);
+    const html = todoTemplate(todo);
     const dom = htmlToDom(html);
-    listElement.appendChild(dom);
+    todoElement.appendChild(dom);
 });
